@@ -14,4 +14,4 @@ USER openwrt
 WORKDIR /home/openwrt/openwrt/
 
 RUN sudo git clone git://git.openwrt.org/openwrt/openwrt.git
-RUN openwrt/scripts/feeds update -a
+RUN sudo openwrt/scripts/feeds update -a
