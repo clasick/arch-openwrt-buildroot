@@ -13,5 +13,5 @@ echo 'openwrt ALL=NOPASSWD: ALL' > /etc/sudoers.d/openwrt
 USER openwrt
 WORKDIR /home/openwrt/openwrt/
 
-RUN git clone git://git.openwrt.org/openwrt/openwrt.git &&\
-	openwrt/scripts/feeds update -a
+RUN sudo git clone git://git.openwrt.org/openwrt/openwrt.git
+RUN openwrt/scripts/feeds update -a
