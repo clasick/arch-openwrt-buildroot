@@ -1,8 +1,6 @@
 # Basic Arch Linux based OpenWrt buildroot image
 FROM base/archlinux
 
-MAINTAINER Vignesh Kumar <xxvignesh@gmail.com>
-
 RUN pacman -Sy --noconfirm archlinux-keyring &&\ 
 pacman -S --needed --noconfirm subversion asciidoc bash bc binutils bzip2 fastjar \
 	flex git gcc util-linux gawk intltool zlib mercurial make cdrkit ncurses \
